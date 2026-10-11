@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/house_prices.csv
+      hash: md5
+      md5: e1ebbff8821dfeba811b82e77639d19c
+      size: 389
+    - path: src/train.py
+      hash: md5
+      md5: 61ad85232eecd462e670c8935001fe71
+      size: 1383
+    outs:
+    - path: models/house_price_model.pkl
+      hash: md5
+      md5: 799a0501e6b42b9cf4fca461746f623a
+      size: 991
